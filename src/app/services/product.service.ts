@@ -25,11 +25,11 @@ export class ProductService {
   }
 
   add(product): Observable<IProduct> {
-    return this.http.post<IProduct>(this.url  ,product);
+    return this.http.post<IProduct>(this.url, product);
   }
 
-  show(id): Observable<IProduct>{
-    return this.http.get<IProduct>(this.url+ id);
+  show(id): Observable<IProduct> {
+    return this.http.get<IProduct>(this.url + '/' + id);
   }
 
 
